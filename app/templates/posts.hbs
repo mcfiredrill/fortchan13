@@ -1,0 +1,7 @@
+<b>posts</b>
+<div class="new-post-link">{{#link-to 'posts.new'}}Add a new post{{/link-to}}</div>
+{{outlet}}
+
+{{#each post in model}}
+  <div class="each-post">{{post.name}}: {{post.body}}</div>
+{{/each}}

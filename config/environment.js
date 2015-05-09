@@ -4,8 +4,7 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'fortchan13',
     environment: environment,
-    contentSecurityPolicy: { 'connect-src': "'self' wss://*.firebaseio.com" },
-    firebase: process.env.FIREBASE_URL,
+    contentSecurityPolicy: { 'connect-src': "'self' http://localhost:3000" },
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {

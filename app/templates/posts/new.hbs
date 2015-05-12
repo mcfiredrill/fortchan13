@@ -1,5 +1,6 @@
 <div class="new-post-form">
-  {{input type="text" placeholder="Name" value=name class="name-input"}}
-  {{input type="text" placeholder="Message" value=body class="body-input"}}
+  {{input type="text" placeholder="Name" value=name}}
+  {{input type="text" placeholder="Message" value=body}}
+  {{s3-upload image_url=image_url}}
   <button {{action 'addPost'}} class="submit">Submit</button>
 </div>

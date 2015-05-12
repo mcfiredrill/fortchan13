@@ -4,7 +4,7 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'fortchan13',
     environment: environment,
-    contentSecurityPolicy: { 'connect-src': "'self' http://localhost:3000" },
+    contentSecurityPolicy: { 'connect-src': "'self' http://localhost:3000 http://fortchan13.s3.amazonaws.com" },
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {

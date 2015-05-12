@@ -5,12 +5,14 @@ export default Ember.Controller.extend({
     addPost: function() {
       var newPost = this.store.createRecord('post', {
         name: this.get('name'),
-        body: this.get('body')
+        body: this.get('body'),
+        image_url: this.get('image_url')
       });
       newPost.save();
       this.setProperties({
         name: '',
-        body: ''
+        body: '',
+        image_url: ''
       });
     }
   }
